@@ -71,6 +71,12 @@ export default {
               content: 'Chính xác thì nụ hôn đầu không được như ý cho lắm. Tuy nhiên các lần sau làm lại thì cũng thật tuyệt vời em nhỉ. Anh thì kệ mẹ đời hôn em bất cứ khi nào anh muốn, bất cứ khi nào có thể.Phở cuốn Ngũ Xã, Hồ Gươm lộng gió, ăn vặt Tạ Hiện. ',
                 htmlContent: '<p>Hồ Tây chiều xuân lộng gió<br>Em có ngại khi anh hôn em?<br>Lem nhem nước mắm từ phở cuốn<br>Luống cuống cúi đầu mắt láo liên<br>Đồ điên , đang nơi công cộng<br>Có muốn động ra chỗ không bóng ai<br>Tôi lai rai cho ông biết mặt<br>'
             },
+            {
+              title: 'Cafe hôn hít',
+              time: '2019/2/11',
+              content: 'Nhân dịp Hà Nội trở lạnh, đón em đi làm cốc trà nóng cho ấm, tiện thể ngồi xuống hôn hít em. Đường đi làm về tranh thủ đèn đỏ đỗ xe lại hôn hít trêu chọc em thật thú vị',
+              htmlContent: '<p>Cư xá cà phê<br>Đang hôn em phê<br>Bỗng thấy chuột chạy<br>Anh Bách tí tè<br>'
+            },
       ]
     }
   }
