@@ -77,6 +77,16 @@ export default {
               content: 'Nhân dịp Hà Nội trở lạnh, đón em đi làm cốc trà nóng cho ấm, tiện thể ngồi xuống hôn hít em. Đường đi làm về tranh thủ đèn đỏ đỗ xe lại hôn hít trêu chọc em thật thú vị',
               htmlContent: '<p>Cư xá cà phê<br>Đang hôn em phê<br>Bỗng thấy chuột chạy<br>Anh Bách tí tè<br>'
             },
+            {
+              title: 'Valentine đầu tiên bên em',
+              time: '2019/2/14',
+              content: 'Valentine này cả 2 chúng ta không còn cô đơn nữa, không tủi hờn lũ có gấu nữa. Anh đã có em bên cạnh, em cũng có anh kề bên. Mình đi ăn những thứ bình dị thôi. Thế giới của 2 người chúng ta là được. Chân gà Lý Văn Phức ngon toẹt em nhỉ :D',
+            },
+            {
+              title: 'Ốm sml cùng nhau',
+              time: '2019/2/17-2019/2/18',
+              content: 'Em thì đi lễ chùa dính mưa vốn đã mệt, anh sáng dậy đã sốt , vẫn phi sang ngồi với em vài chút, ăn bánh rán mặn, uống cốc trà nóng. Hôm sau 2 đứa ốm sml tưởng chớt :)',
+            },
       ]
     }
   }
