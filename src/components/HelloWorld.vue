@@ -87,6 +87,11 @@ export default {
               time: '2019/2/17-2019/2/18',
               content: 'Em thì đi lễ chùa dính mưa vốn đã mệt, anh sáng dậy đã sốt , vẫn phi sang ngồi với em vài chút, ăn bánh rán mặn, uống cốc trà nóng. Hôm sau 2 đứa ốm sml tưởng chớt :)',
             },
+            {
+              title: 'Yêu xa',
+              time: '2019/2/27',
+              content: 'Chúng ta ai cũng ghét yêu xa, nhưng có lẽ vì vậy ông trời muốn thử thách bọn mình em ạ. Cùng nhau cố gắng em nhé ! Anh yêu em và thương em nhiều!',
+            },
       ]
     }
   }
