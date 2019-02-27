@@ -1,19 +1,12 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,900);
