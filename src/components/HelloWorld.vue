@@ -92,7 +92,6 @@ export default {
               time: '2019/2/26',
               content: 'Bùng làm để ở bên nhau cả 1 buổi chiều, bình yên nhưng không bình thường phải không em yêu',
             },
-      ]
             {
               title: 'Yêu xa',
               time: '2019/2/27',
