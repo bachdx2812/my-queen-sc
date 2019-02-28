@@ -103,5 +103,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../assets/styles/hello_world.css';
 </style>

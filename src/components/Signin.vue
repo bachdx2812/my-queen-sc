@@ -1,16 +1,24 @@
 <template>
-  <div class="signin">
-    <h2>Sign in</h2>
-    <input type="text" placeholder="Username" v-model="username">
-    <input type="password" placeholder="Password" v-model="password">
-    <button>Signin</button>
-    <p>You don't have an account?
-      <router-link to="/signup">create account now!!</router-link>
-    </p>
+  <div>
+    <form class="login-form">
+      <p class="login-text">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-lock fa-stack-1x"></i>
+        </span>
+      </p>
+      <input v-model="username" type="email" class="login-username" autofocus="true" required="true" placeholder="Email" />
+      <input type="password" v-model="password" class="login-password" required="true" placeholder="Password" />
+      <button type="button" class="login-submit" @click="signIn">Log In </button>
+    </form>
+    <div class="underlay-photo"></div>
+    <div class="underlay-black"></div>
   </div>
 </template>
 
 <script>
+import firebase from 'firebase';
+
 export default {
   name: 'Signin',
   data () {
@@ -19,35 +27,22 @@ export default {
       password: ''
     }
   },
-  methods: {}
+  methods: {
+    signIn: function () {
+      firebase.auth().signInWithEmailAndPassword(this.username, this.password).then(
+        user => {
+          alert('Success!')
+          this.$router.push('/')
+        },
+        err => {
+          alert(err.message)
+        }
+      )
+    }
+  }
 }
 </script>
 
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.signin {
-  margin-top: 20px;
-
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center
-}
-input {
-  margin: 10px 0;
-  padding: 10px;
-}
+<style lang="scss" scoped>
+@import '../assets/styles/login.scss';
 </style>
