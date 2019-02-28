@@ -13,7 +13,7 @@ let router = new Router({
   routes: [
     {
       path: '*',
-      redirect: 'signin'
+      redirect: '/signin'
     },
     {
       path: '/',
