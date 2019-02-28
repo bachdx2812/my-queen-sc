@@ -88,6 +88,12 @@ export default {
               content: 'Em thì đi lễ chùa dính mưa vốn đã mệt, anh sáng dậy đã sốt , vẫn phi sang ngồi với em vài chút, ăn bánh rán mặn, uống cốc trà nóng. Hôm sau 2 đứa ốm sml tưởng chớt :)',
             },
             {
+              title: 'Our First Love',
+              time: '2019/2/26',
+              content: 'Bùng làm để ở bên nhau cả 1 buổi chiều, bình yên nhưng không bình thường phải không em yêu',
+            },
+      ]
+            {
               title: 'Yêu xa',
               time: '2019/2/27',
               content: 'Chúng ta ai cũng ghét yêu xa, nhưng có lẽ vì vậy ông trời muốn thử thách bọn mình em ạ. Cùng nhau cố gắng em nhé ! Anh yêu em và thương em nhiều!',
