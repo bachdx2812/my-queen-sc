@@ -6,7 +6,7 @@
             <p class="subtitle">Lets write our story together</p>
         </header>
         <ul class="timeline-list">
-            <li v-for="event in events">
+            <li v-for="event in events" v-bind:key="event.title">
                 <div class="content">
                     <h3 class="title">{{ event.title }}</h3>
                     <h4>{{ event.time }}</h4>

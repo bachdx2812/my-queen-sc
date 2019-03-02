@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Signup from '@/components/Signup'
+// import Signup from '@/components/Signup'
 import Signin from '@/components/Signin'
 import firebase from 'firebase'
 
@@ -48,8 +48,18 @@ router.beforeEach((to, from, next) => {
       }
     })
   } else {
-    next() // next() を常に呼び出すようにしてください!
+    next()
   }
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+    .then(function() {
+      // return firebase.auth().signInWithEmailAndPassword(email, password);
+    })
+    .catch(function(error) {
+      // Handle Errors here.
+      alert(error.message);
+      // var errorCode = error.code;
+      // var errorMessage = error.message;
+    });
 })
 
 export default router;

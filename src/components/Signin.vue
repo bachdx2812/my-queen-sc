@@ -1,19 +1,21 @@
 <template>
-  <div>
-    <form class="login-form">
-      <p class="login-text">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-lock fa-stack-1x"></i>
-        </span>
-      </p>
-      <input v-model="username" type="email" class="login-username" autofocus="true" required="true" placeholder="Email" />
-      <input type="password" v-model="password" class="login-password" required="true" placeholder="Password" />
-      <button type="button" class="login-submit" @click="signIn">Log In </button>
-    </form>
-    <div class="underlay-photo"></div>
-    <div class="underlay-black"></div>
-  </div>
+    <div class="overlay">
+      <form>
+        <div class="con">
+          <header class="head-form">
+            <h2>Love of my life</h2>
+          </header>
+          <br>
+          <div class="field-set">
+            <input class="form-input" type="text" placeholder="UserName" v-model="username" required>
+            <br>
+            <input class="form-input" type="password" placeholder="Password" id="pwd" name="password" v-model="password" required>
+            <br>
+            <button class="log-in" type="button" @click="signIn"> Log In </button>
+          </div>
+        </div>
+      </form>
+    </div>
 </template>
 
 <script>
@@ -31,7 +33,7 @@ export default {
     signIn: function () {
       firebase.auth().signInWithEmailAndPassword(this.username, this.password).then(
         user => {
-          alert('Success!')
+          alert(`I Love you my dear ${user.user.email}`);
           this.$router.push('/')
         },
         err => {
@@ -42,7 +44,19 @@ export default {
   }
 }
 </script>
-
 <style lang="scss" scoped>
 @import '../assets/styles/login.scss';
+</style>
+
+<style>
+body {
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  font-family: 'Vibur', cursive;
+  font-family: 'Abel', sans-serif;
+  opacity: .95;
+}
 </style>
