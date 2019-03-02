@@ -6,12 +6,12 @@ import firebase from 'firebase'
 Vue.config.productionTip = false
 
 const config = {
-  apiKey: "AIzaSyBQqFqJ9VtJiJBI9oWn75UsTiBVAb8k_vw",
-  authDomain: "my-queen-1169c.firebaseapp.com",
-  databaseURL: "https://my-queen-1169c.firebaseio.com",
-  projectId: "my-queen-1169c",
-  storageBucket: "",
-  messagingSenderId: "1051102495347"
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+  authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.VUE_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID
 }
 firebase.initializeApp(config);
 
