@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import TimeLine from '@/components/TimeLine'
 // import Signup from '@/components/Signup'
+import Event from '@/components/Event'
 import Signin from '@/components/Signin'
 import firebase from 'firebase'
 
@@ -30,6 +31,12 @@ let router = new Router({
       path: '/signin',
       name: 'Signin',
       component: Signin
+    },
+    {
+      path: '/events',
+      name: 'Event',
+      component: Event,
+      meta: { requiresAuth: true }
     }
   ]
 })
