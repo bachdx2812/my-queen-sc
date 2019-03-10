@@ -3,7 +3,11 @@
     <div class='l-contained'>
         <header class="heading-group">
             <h2>Our Story</h2>
-            <p class="subtitle">Lets write our story together</p>
+            <p class="subtitle">
+              <router-link to="/events">
+                Lets write our story together
+              </router-link>
+            </p>
         </header>
         <ul class="timeline-list">
             <li v-for="event in events" v-bind:key="event.title">

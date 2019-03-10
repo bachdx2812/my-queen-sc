@@ -13,12 +13,12 @@
     </div>
     <div class="field">
       <p class="control">
-        <input class="input" type="text" placeholder="Content" v-model="newEvent.content">
+        <textarea class="textarea" placeholder="Content" v-model="newEvent.content" rows="5"></textarea>
       </p>
     </div>
     <div class="field">
       <p class="control">
-        <input class="input" type="text" placeholder="HTML Content" v-model="newEvent.htmlContent">
+        <textarea class="textarea" placeholder="HTML Content" v-model="newEvent.htmlContent" rows="5"></textarea>
       </p>
     </div>
     <div class="field">
